@@ -1,0 +1,19 @@
+.coverage
+.pytest_cache/
+.venv/
+.venv-*/
+__pycache__/
+*.egg-info/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.DS_Store
+
+# Generated simulation/model artifacts
+outputs/
+build/
+dist/
+vendor/
+packages/cosmos-framework/

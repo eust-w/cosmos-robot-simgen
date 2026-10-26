@@ -1,0 +1,4 @@
+include Makefile
+recursive-include docs *.md *.json *.txt
+recursive-include examples *.txt
+recursive-include scripts *.py *.sh

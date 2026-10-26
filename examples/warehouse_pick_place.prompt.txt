@@ -1,0 +1,1 @@
+A robot arm picks a blue cube from a work table and places it into a yellow bin.

@@ -1,0 +1,61 @@
+{
+  "title": "Cosmos Robot SimGen",
+  "status": "PROTOTYPE / 原型预览",
+  "scenes": [
+    {
+      "id": "intro",
+      "eyebrow": "01 / TASK TO SCENE",
+      "headline": ["一句任务描述", "一个可检查的场景包"],
+      "detail": "Cosmos Robot SimGen",
+      "narration": "机器人仿真实验，往往从整理场景文件开始。这个原型叫 Cosmos Robot SimGen，尝试把任务描述变成可检查的场景包。",
+      "subtitle": ["从任务描述开始", "生成可检查的场景包"],
+      "english": "Robotics experiments start with scene files. Cosmos Robot SimGen is a prototype for turning task descriptions into inspectable scene packages."
+    },
+    {
+      "id": "prompt",
+      "eyebrow": "02 / TEMPLATE COMPILER",
+      "headline": ["描述任务", "保留结构"],
+      "detail": "规则模板 / 固定场景与路点",
+      "narration": "输入把蓝色方块放到黄色目标区这样的描述，当前版本用规则模板生成场景，保留物体、路点和任务条件。",
+      "subtitle": ["当前使用规则模板", "物体、路点和任务条件保存在元数据中"],
+      "english": "The current compiler uses a rule-based template. It stores object descriptions, waypoints, and task conditions as metadata."
+    },
+    {
+      "id": "package",
+      "eyebrow": "03 / INSPECTABLE OUTPUT",
+      "headline": ["一个包", "多种入口"],
+      "detail": "MJCF / URDF / OBJ / JSON",
+      "narration": "导出结果包含场景、网格和元数据。文件可以检查，引用可以校验，方便继续接入自己的仿真工作流。",
+      "subtitle": ["导出 MJCF、URDF、OBJ 与元数据", "检查文件结构及资源引用"],
+      "english": "The package includes MJCF, URDF, OBJ meshes, and JSON metadata. Its structure and asset references can be checked."
+    },
+    {
+      "id": "verify",
+      "eyebrow": "04 / REAL EXPORTED GEOMETRY",
+      "headline": ["实际导出", "实际载入"],
+      "detail": "MuJoCo / 静态场景检查",
+      "narration": "画面来自实际导出的场景，在 MuJoCo 中载入并渲染。这里移动的是镜头；机器人、抓取控制和任务成功判定，仍然需要实现。",
+      "subtitle": ["镜头环绕实际导出场景，物体保持静态", "机器人控制与成功判定尚未实现"],
+      "english": "This is the exported scene rendered in MuJoCo. Only the camera moves. Robot control, grasp execution, and task-success evaluation are not implemented."
+    },
+    {
+      "id": "cosmos",
+      "eyebrow": "05 / OPTIONAL MODEL INTEGRATION",
+      "headline": ["Cosmos 接入", "独立记录状态"],
+      "detail": "当前演示：Cosmos skipped",
+      "narration": "项目预留了 Cosmos 视频接口。这次没有调用真实模型。视频附件也不会自动变成机器人动作，模型到仿真仍是后续工作。",
+      "subtitle": ["本次 Cosmos 推理明确标记为 skipped", "视频到机器人动作的转换仍待实现"],
+      "english": "A Cosmos video client exists, but this demo skips inference. A video attachment is not an executable robot action sequence."
+    },
+    {
+      "id": "next",
+      "eyebrow": "06 / NEXT MILESTONE",
+      "headline": ["让一个任务", "真正执行成功"],
+      "detail": "机械臂 / 控制器 / 成功判定",
+      "narration": "下一步，先把一个桌面抓取任务真正跑通，再补齐许可和复现流程，公开代码。目标是让更多人复用仿真实验。",
+      "subtitle": ["下一步：桌面抓取的完整执行与验证", "正在准备开源，当前不是正式发布版"],
+      "english": "Next: one executable tabletop manipulation task, measured outcomes, clear licensing, and reproducible setup before the public release."
+    }
+  ],
+  "portrait_scenes": ["intro", "package", "verify", "next"]
+}
